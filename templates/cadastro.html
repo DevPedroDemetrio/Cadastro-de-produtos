@@ -10,40 +10,21 @@
 
 </head>
 <body>
+<!-- boostrap -->
+  <h2 style="text-align:center;">Adicionar produto</h2>
+   <hr>
+  <form action="{{url_for('cadastro')}}" method="POST" class="form-controll">
+      <label>Nome do Produto</label>
+      <input class="form-control" type="text" name="produto" required>
+      <label>categoria</label>
+      <textarea class="form-control" type="text" name="categoria"  required></textarea>
+      <label>Quantidade</label>
+      <input class="form-control" type="number" name="quantidade"  required>
+      <button value="submit" class="btn btn-success">Cadastrar</button>
+  </form>
 
-<div class="container" >
-  <a class="links" id="paracadastro"></a>
-  <a class="links" id="paralogin"></a>
 
-  <div class="content">      
-    <!--FORMULÁRIO DE LOGIN-->
-    <div id="login">
-      <form method="post" action="{{url_for('cadastro')}}"> 
-        <h1>Cadastrar Produto</h1> 
-        <p> 
-          <label for="email_login">Nome do Produto</label>
-          <input id="email_login" name="produto" required="required" type="text" placeholder="Digite o nome do produto"/>
-        </p>
-
-        <p> 
-          <label for="senha_login">Categoria</label>
-          <input id="senha_login" name="categoria" required="required" type="text" placeholder="Categoria do produto" /> 
-        </p>
-
-        <p> 
-          <label for="senha_login">Quantidade</label>
-          <input id="senha_login" name="quantidade" required="required" type="number" placeholder="Quantidade do produto" /> 
-        </p>
-        
-
-        <p> 
-          <input type="submit" value="Cadastrar" /> 
-        </p>
-        
-      </form>
-    </div>
-  </div>
-</div>
+  <!-- fim -->
   <br>
   <br>
   <br>
